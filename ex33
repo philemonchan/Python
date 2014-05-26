@@ -1,0 +1,15 @@
+numbers = []
+
+def count_to(stop):
+	i = 0
+	while i <= stop:
+		numbers.append(i)
+		i += 1
+
+	#print "numbers now: ", numbers
+	print "at the bottom i is %d" % i
+	
+	for num in numbers:
+		print num
+
+count_to(int(raw_input("> ")))
